@@ -46,7 +46,7 @@
 .main-container-image
 {
 	margin: 0 35px;
-	text-decoration: none;
+	border-color: black;
 	border-radius: 20px;
 }
 .main-container-magic-title:hover
