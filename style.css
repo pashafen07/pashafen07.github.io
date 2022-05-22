@@ -3,106 +3,114 @@
 	padding: 0;
 	margin: 0;
 }
+	
+/* HEADER */
+	
 .header
 {
-	background: MistyRose;
+	background: LightYellow;
+	color: DarkOrange;
+	padding: 10px 65px;
 }
-.header-container
+	
+.container-header
 {
 	display: flex;
 	justify-content: space-between;
-	padding: 5px 75px;
 }
-.header-container-menu
+	
+.header-logotip
 {
 	display: flex;
-	align-items: center;
+	line-height: 75px;
 }
+	
+.logotip-linc
+{
+	text-decoration: none;
+	color: DarkOrange;
+}
+	
+.header-menu
+{
+	padding: 0 30px;
+	display: flex;
+	line-height: 75px;
+}
+	
 .menu-item
 {
-	padding: 0 20px;
+	display: inline;
+	list-style: none;
 }
-.menu-item-link
+	
+.menu-linc
 {
 	text-decoration: none;
-	color: DeepPink;
+	color: DarkOrange;
+	font-size: 17px;
+	padding: 0 8px;
 }
-.main
+	
+/* MAIN PART OF SITE */
+	
+.banner-section
 {
-	padding: 15px 75px;
-	color: DeepPink;
-	font-size: 35px;
+	background: url(bg.jpg);
+	background-size: cover;
+	padding: 130px 0;
+	color: DarkOrange;
+}
+	
+/* MAIN PART - CARDS */
+	
+.cards-text
+{
+	color: DarkOrange;
+	font-size: 30px;
 	text-align: center;
 }
-.main-container-title
+	
+.card
 {
-	padding: 20px 0;
-}
-.main-container-images
-{
-	padding: 30px 0;
+	padding: 20px;
+	margin-top: 25px;
+	width: 20%;
+	background: white;
+	box-shadow: 0px 2px 7px Gainsboro;
 	text-align: center;
+	margin: 20px;
 }
-.main-container-image
+	
+.card-title, .card-text
 {
-	margin: 0 35px;
-	border-color: black;
-	border-radius: 20px;
+	margin-top: 10px;
+	color: DarkOrange;
 }
-.main-container-magic-title:hover
+	
+.card-button
 {
-	padding: 20px 0;
-	color: HotPink;
+	background: LightYellow;
+	padding: 10px 55px;
+	border-radius: 10px;
+	margin-top: 10px;
+	color: DarkOrange;
+	font-size: 25px;
 }
-.image-link
+	
+.card-link
 {
 	text-decoration: none;
+	color: DarkOrange;
 }
+	
+	/* FOOTER */
+	
 .footer
 {
-	background: url(img/bg.jpg);
+	background: url(footer-bg.jpg);
+	background-size: cover;
 	padding: 100px 0;
-}
-.footer-row
-{
-	display: flex;
-	justify-content: space-around;
-	flex-direction: row;
-}
-.copiright
-{
 	color: white;
-	font-size: 30px;
-}
-.social-networks
-{
-	display: flex;
-	justify-content: flex-end;
-}
-.footer-logo
-{
-	margin: 10px;
-}
-.footer-search
-{
-	display: flex;
-	justify-content: space-between;
-	margin-top: 30px;
-	align-items: center;
-}
-.footer-search-input
-{
-	flex-grow: 3;
-	height: 40px;
-	margin-right: 20px;
-	border-radius: 10px;
-	border: none;
-}
-.footer-search-button
-{
-	flex-grow: 2;
-	height: 40px;
-	text-transform: uppercase;
-	border-radius: 10px;
-	font-weight: bold;
+	font-size: 35px;
 }
