@@ -56,7 +56,7 @@
 	
 .banner-section
 {
-	background: url(bg.jpg);
+	background: url(img\bg.jpg);
 	background-size: cover;
 	padding: 130px 0;
 	color: DarkOrange;
@@ -108,7 +108,7 @@
 	
 .footer
 {
-	background: url(footer-bg.jpg);
+	background: url(img\footer-bg.jpg);
 	background-size: cover;
 	padding: 100px 0;
 	color: white;
