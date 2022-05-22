@@ -55,25 +55,9 @@
 	padding: 20px 0;
 	color: HotPink;
 }
-.user-info
-{
-	padding: 20px 0;
-}
-.user-info-input
-{
-	width: 200px;
-	height: 25px;
-}
 .image-link
 {
 	text-decoration: none;
-}
-.magic-picture
-{
-	border: 4px solid;
-	border-radius: 10px;
-	border-color: HotPink;
-	box-shadow: 5px 5px DeepPink;
 }
 .footer
 {
