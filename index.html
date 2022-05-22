@@ -1,67 +1,234 @@
 <html>
 	<head>
-		<link rel="stylesheet" href="style.css">
+	<style>
+	*
+	{
+		padding: 0;
+		margin: 0;
+	}
+	
+	/* HEADER */
+	
+	.header
+	{
+		background: LightYellow;
+		color: DarkOrange;
+		padding: 10px 65px;
+	}
+	
+	.container-header
+	{
+		display: flex;
+		justify-content: space-between;
+	}
+	
+	.header-logotip
+	{
+		display: flex;
+		line-height: 75px;
+	}
+	
+	.logotip-linc
+	{
+		text-decoration: none;
+		color: DarkOrange;
+	}
+	
+	.header-menu
+	{
+		padding: 0 30px;
+		display: flex;
+		line-height: 75px;
+	}
+	
+	.menu-item
+	{
+		display: inline;
+		list-style: none;
+	}
+	
+	.menu-linc
+	{
+		text-decoration: none;
+		color: DarkOrange;
+		font-size: 17px;
+		padding: 0 8px;
+	}
+	
+	/* MAIN PART OF SITE */
+	
+	.banner-section
+	{
+		background: url(bg.jpg);
+		background-size: cover;
+		padding: 130px 0;
+		color: DarkOrange;
+	}
+	
+	/* MAIN PART - CARDS */
+	
+	.cards-text
+	{
+		color: DarkOrange;
+		font-size: 30px;
+		text-align: center;
+	}
+	
+	.card
+	{
+		padding: 20px;
+		margin-top: 25px;
+		width: 20%;
+		background: white;
+		box-shadow: 0px 2px 7px Gainsboro;
+		text-align: center;
+		margin: 20px;
+	}
+	
+	.card-title, .card-text
+	{
+		margin-top: 10px;
+		color: DarkOrange;
+	}
+	
+	.card-button
+	{
+		background: LightYellow;
+		padding: 10px 55px;
+		border-radius: 10px;
+		margin-top: 10px;
+		color: DarkOrange;
+		font-size: 25px;
+	}
+	
+	.card-link
+	{
+		text-decoration: none;
+		color: DarkOrange;
+	}
+	
+	/* FOOTER */
+	
+	.footer
+	{
+		background: url(footer-bg.jpg);
+		background-size: cover;
+		padding: 100px 0;
+		color: white;
+		font-size: 35px;
+	}
+	</style>
 	</head>
 	<body>
+		<!--Шапка сайта-->
 		<header class="header">
-			<div class="header-container">
-				<div class="header-container-logotip">
-					<a href="main-page.html"><img src="img\logotip.png"></img></a>
+			<div class="container-header">
+				<div class="header-logotip">
+					<img src="logotip.png"></img>
+					<h1 style="padding: 0 20px;"><a href="main-page.html" class="logotip-linc">У Артёма</a></h1>
 				</div>
-				<div class="header-container-menu">
-					<h2 class="menu-item">
-						<a class="menu-item-link" href="main-page.html"><strong>Главная</strong></a>
-					</h2>
-					<h2 class="menu-item">
-						<a class="menu-item-link" href="pages\C sharp-page.html"><strong>HTML</strong></a>
-					</h2>
-					<h2 class="menu-item">
-						<a class="menu-item-link" href="pages\C++-page.html"><strong>CSS</strong></a>
-					</h2>
-					<h2 class="menu-item">
-						<a class="menu-item-link" href="pages\C-page.html"><strong>JavaScript</strong></a>
-					</h2>
+				<div class="header-menu">
+					<ul>
+						<li class="menu-item">
+							<a class="menu-linc" href="main-page.html"><strong>Главная</strong></a>
+						</li>
+						<li class="menu-item">
+							<a class="menu-linc" href="animals.html"><strong>Животные</strong></a>
+						</li>
+						<li class="menu-item">
+							<a class="menu-linc" href="eating-for-animals.html"><strong>Корм</strong></a>
+						</li>
+						<li class="menu-item">
+							<a class="menu-linc" href="information-page.html"><strong>Информация</strong></a>
+						</li>
+					</ul>
 				</div>
 			</div>
 		</header>
-		<main class="main">
-			<div class="main-container">
-				<section class="main-container-title">
-					<h1><font face="monospace">языки програмирования: HTML, CSS, JavaScript!</font></h1>
-				</section>
-				<section class="main-container-images">
-					<a class="image-link" href="pages\C sharp-page.html">
-						<img class="main-container-image" src="img\html.jpg"></img>
-					</a>
-					<a class="image-link" href="pages\C++-page.html">
-						<img class="main-container-image" src="img\css.jpg"></img>
-					</a>
-					<a class="image-link" href="pages\C-page.html">
-						<img class="main-container-image" src="img\js.png"></img>
-					</a>
-				</section>
-				<section class="main-container-magic-title">
-					<h1>
-						<font face="Courier New">На нашем сайте вы узнаете немного информации о создании сайтов!</font></h1>
-				</section>
-			</div>
-		</main>
-		<footer class="footer">
-			<div class="container">
-				<div class="footer-row">
-					<h1 class="copiright"><font face="cursive"><ins>Копирайт 2022: Все права защищены кем-то:)</ins></font>
-						<div class="footer-search">
-							<input type="text" class="footer-search-input">
-							<button class="footer-search-button">Subscribe</button>
+		<!--Главная часть сайта-->
+		<main>
+			<!--Секция 1-->
+			<section class="banner-section">
+				<div>
+					<div style="text-align: center;">
+						<h2 style="font-size: 45px;">
+							Зоомагазин-приют "У Артёма"
+						</h2>
+						<div style="font-size: 35px;">
+							Заведи питомца!!!
 						</div>
-					</h1>
-					<div class="social-networks">
-						<a class="footer-logo" href="https://vk.com"><img src="img\vk.png"></img></a>
-						<a class="footer-logo" href="https://vk.com"><img src="img\instagram.png"></img></a>
-						<a class="footer-logo" href="https://vk.com"><img src="img\facebook.png"></img></a>
 					</div>
 				</div>
-			</div>
+			</section>
+			<!--Секция 2-->
+			<section style="padding: 15px 0;">
+				<div style="margin: 0 auto;">
+					<div class="cards-text">
+						<h1>Рекомендуемые животные</h1>
+						<div style="font-size: 35px;">Специально для вас!</div>
+					</div>
+					<div>
+					<!--Карточки-->
+						<div style="display: flex;">
+							<div class="card">
+								<img src="cat.jpg"></img>
+								<h1 class="card-title">Кот Василий</h1>
+								<h3 class="card-text">Ищет добрых хозяев</h3>
+								<div class="card-button"><a href="https://vk.com/public206797409" class="card-link"><strong>Узнать подробности</strong></a></div>
+							</div>
+							<div class="card">
+								<img src="dog.jpg"></img>
+								<h1 class="card-title">Пёс Толян</h1>
+								<h3 class="card-text">Ищет новый дом</h3>
+								<div class="card-button"><a href="https://vk.com/public206797409" class="card-link"><strong>Узнать подробности</strong></a></div>
+							</div>
+							<div class="card">
+								<img src="xom.jpg"></img>
+								<h1 class="card-title">Хомячок Артёма</h1>
+								<h3 class="card-text">Пытается найти добрых хозяев</h3>
+								<div class="card-button"><a href="https://vk.com/public206797409" class="card-link"><strong>Узнать подробности</strong></a></div>
+							</div>
+							<div class="card">
+								<img src="pig.jpg"></img>
+								<h1 class="card-title">Поросёнок Бонифац</h1>
+								<h3 class="card-text">Ищет место для сна у вас дома</h3>
+								<div class="card-button"><a href="https://vk.com/public206797409" class="card-link"><strong>Узнать подробности</strong></a></div>
+							</div>
+						</div>
+						<!--Карточки2-->
+						<div style="display: flex;">
+							<div class="card">
+								<img src="dog2.jpg"></img>
+								<h1 class="card-title">Пёс Рудольф</h1>
+								<h3 class="card-text">Ждёт еды</h3>
+								<div class="card-button"><a href="https://vk.com/public206797409" class="card-link"><strong>Узнать подробности</strong></a></div>
+							</div>
+							<div class="card">
+								<img src="xom2.jpg"></img>
+								<h1 class="card-title">Кролик Карл</h1>
+								<h3 class="card-text">Ищёт тёплый дом</h3>
+								<div class="card-button"><a href="https://vk.com/public206797409" class="card-link"><strong>Узнать подробности</strong></a></div>
+							</div>
+							<div class="card">
+								<img src="cat2.jpg"></img>
+								<h1 class="card-title">Кот Борис</h1>
+								<h3 class="card-text">Хочет к тебе домой</h3>
+								<div class="card-button"><a href="https://vk.com/public206797409" class="card-link"><strong>Узнать подробности</strong></a></div>
+							</div>
+							<div class="card">
+								<img src="Tiger.jpg"></img>
+								<h1 class="card-title">Тигр Симба<h1>
+								<h3 class="card-text">Съел прошлых хозяев :( </h3>
+								<div class="card-button"><a href="https://vk.com/public206797409" class="card-link"><strong>Узнать подробности</strong></a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<!--Подвал-->
+		<footer class="footer">
+			<p>Копирайт 2022. Все права защищены ITKor</p>
 		</footer>
 	</body>
 </html>
