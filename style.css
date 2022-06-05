@@ -3,3 +3,52 @@
 	padding: 0;
 	margin: 0;
 }
+.header
+{
+	margin-bottom: 25px;
+	border: 1px solid;
+	border-color: Gainsboro;
+	box-shadow: 2px 0px 5px Gainsboro;
+}
+.header-container
+{
+	display: flex;
+	justify-content: space-between;
+}
+.header-logotip
+{
+	border-right: 1px solid;
+	border-color: Gainsboro;
+	padding: 10px;
+}
+.logotip-link
+{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	text-decoration: none;
+	color: #CDC9C9;
+}
+.logo-text:active
+{
+	color: #1C1C1C;
+}
+.header-menu
+{
+	border-left: 1px solid;
+	border-color: Gainsboro;
+	padding: 10px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+.menu-link
+{
+	text-decoration: none;
+	color: #CDC9C9;
+	padding: 10px;
+}
+.link-text:hover
+{
+	color: #1C1C1C;
+}
