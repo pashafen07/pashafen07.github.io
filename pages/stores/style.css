@@ -87,3 +87,62 @@
 	border-radius: 10px;
 	margin:  15px 35px;
 }
+.footer
+{
+	border-top: 1px solid;
+	border-color: Gainsboro;
+	box-shadow: 5px 0px 2px Gainsboro;
+}
+.footer-container
+{
+	padding: 20px 0;
+}
+.footer-row
+{
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
+}
+.footer-copiright
+{
+	border-top: 1px solid;
+	border-color: Gainsboro;
+	padding: 10px;
+}
+.copiright-text
+{
+	color: #FF6EB4;
+}
+.social-networks
+{
+	display: flex;
+	justify-content: flex-end;
+}
+.footer-logo
+{
+	margin: 10px;
+}
+.footer-search
+{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 30px;
+	align-items: center;
+}
+.search-input
+{
+	flex-grow: 4;
+	height: 40px;
+	margin-right: 20px;
+	border-radius: 10px;
+	background: WhiteSmoke;
+	border: none;
+}
+.search-button
+{
+	flex-grow: 3;
+	height: 40px;
+	text-transform: uppercase;
+	border-radius: 10px;
+	font-weight: bold;
+}
