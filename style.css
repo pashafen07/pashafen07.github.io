@@ -27,11 +27,11 @@
 	flex-direction: row;
 	align-items: center;
 	text-decoration: none;
-	color: #CDC9C9;
+	color: #FF6EB4;
 }
 .logo-text:active
 {
-	color: #1C1C1C;
+	color: #CD1076;
 }
 .header-menu
 {
@@ -45,18 +45,40 @@
 .menu-link
 {
 	text-decoration: none;
-	color: #CDC9C9;
+	color: #FF6EB4;
 	padding: 10px;
 }
 .link-text:hover
 {
-	color: #1C1C1C;
+	color: #CD1076;
 }
 .main
 {
 	margin-bottom: 25px;
 }
-.main-container
+.main-text-line
 {
+	margin-left: 105px;
+	display: flex;
+	font-size: 30px;
+}
+.main-text
+{
+	margin-right: 35px;
+	color: #CD1076;
+}
+.text-line
+{
+	margin-right: 35px;
+	color: #FF6EB4;
+}
+.line-link
+{
+	text-decoration: none;
+}
+.cards-row
+{
+	margin-top: 35px;
 	justify-content: space-between;
+	display: flex;
 }
