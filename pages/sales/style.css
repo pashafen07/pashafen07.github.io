@@ -82,13 +82,9 @@
 	justify-content: space-around;
 	display: flex;
 }
-.picture-box:hover
-{
-	box-shadow: 2px 0px 5px Gainsboro;
-}
 .picture
 {
-	border-radius: 10px;
+	border-radius: 20px;
 	margin:  15px 35px;
 }
 .footer
