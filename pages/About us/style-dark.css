@@ -1,0 +1,200 @@
+*
+{
+	padding: 0;
+	margin: 0;
+}
+.header
+{
+	border-bottom: 1px solid;
+	border-bottom-color: #CFCFCF;
+	width: 100%;
+	height: 81px;
+	position: fixed;
+	background: #363636;
+}
+body
+{
+    background: #363636;
+}
+.header-container
+{
+	display: flex;
+	justify-content: space-between;
+	padding:  2px 30px;
+	align-items: center;
+}
+.logo-link
+{
+	text-decoration: none;
+	align-items: center;
+	display: flex;
+}
+.logo-text
+{
+	font-size: 25px;
+	color: #B5B5B5; 
+	padding-left: 20px;
+}
+.header-menu
+{
+	display: flex;
+	align-items: center
+}
+.input-link
+{
+	padding-right: 20px;
+}
+.input-button
+{
+	width: 110%;
+	border: none;
+	border-radius: 10px;
+	border-color: #FFD700;
+	background:	#FFD700;
+	padding: 2px 0;
+	cursor: pointer;
+}
+.input-button:active
+{
+	box-shadow: 0 0 0 4px rgba(255, 215, 0, 0.5);
+}
+.button-text
+{
+	color: White;
+	font-size: 30px;
+}
+.menu-list
+{
+	list-style: none;
+	display: flex;
+}
+.menu-link
+{
+	text-decoration: none;
+	color: #B5B5B5;
+	padding: 0 10px;
+	font-size: 28px;
+}
+.menu-text:hover
+{
+	color: #FFD700;
+}
+.main-container
+{
+	padding-top: 80px;
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-bottom: 0;
+}
+.banner-section
+{
+	padding: 75px 0;
+	text-align: center;
+	color: #FFD700;
+}
+.banner-title
+{
+	padding-bottom: 10px;
+	font-size: 43px;
+}
+.banner-text
+{
+	font-size: 23px;
+}
+.main-head
+{
+	margin-bottom: 40px;
+}
+.head-title
+{
+	color:	#FFD700;
+}
+.head-text
+{
+	color: #B5B5B5;
+	padding-top: 20px;
+	font-size: 20px;
+}
+.head-list
+{
+	color: #B5B5B5;
+	padding: 0 18px;
+}
+.footer
+{
+	border-top: 1px solid;
+	border-top-color: Gainsboro;
+}
+.footer-container
+{
+	padding: 20px;
+	text-align: center;
+	color: #FFD700;
+}
+.navigation
+{
+	color: Gainsboro;
+}
+.navigation-text:hover
+{
+	color: #FFB90F;
+	cursor: pointer;
+}
+.footer-text
+{
+	margin-top: 10px;
+}
+.web-list
+{
+	list-style: none;
+	display: flex;
+	justify-content: center;
+}
+.web-item
+{
+	padding: 25px;
+}
+.web-img
+{
+    border-radius: 5px;
+}
+::selection 
+{
+	background: #FFD700;
+	color: White;
+}
+::-webkit-scrollbar
+{
+	height: 0;
+	width: 0;
+}
+label
+{
+	width: 50px;
+	height: 22px;
+	display: block;
+	position: relative;
+	margin-top: 3px;
+}
+.input + span
+{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: url("img/dark-light.png") no-repeat;;
+	cursor: pointer;
+}
+.input
+{
+	opacity: 0;
+}
+.input:checked + span
+{
+	background-position: 0 -22px; 
+}
+.menu-checkbox
+{
+	margin-left: 10px;
+}
