@@ -4,39 +4,62 @@
 		<link rel="stylesheet" href="style.css">
 		<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<script>
+			function check()
+			{
+				if ($(".input").prop("checked"))
+				{
+					link = document.createElement("link");
+					link.href = "style-dark.css";
+					link.rel = "stylesheet";
+					$("head").append(link);
+				}
+				else
+				{
+					$("head").empty(link);
+					link = document.createElement("link");
+					link.href = "style.css";
+					link.rel = "stylesheet";
+					$("head").append(link);
+				}
+			}
+		</script>
 	</head>
 	<body>
 		<header class="header">
 			<div class="header-container">
 				<div class="header-logo">
-					<a class="logo-link" href="https://pashafen07.github.io/index.html">
+					<a class="logo-link" href="C:\Users\Elena\Desktop\Project1\index.html">
 						<img src="img/logo.png"></img>
-						<span class="logo-text"><font class="logo-name" face="Arial black">Good Food</font></span>
+						<span class="logo-text"><font face="Arial black">Good Food</font></span>
 					</a>
 				</div>
 				<div class="header-menu">
-					<a class="input-link" href="https://pashafen07.github.io/pages/Authorization/index.html">
+					<a class="input-link" href="C:\Users\Elena\Desktop\Project1\pages\Authorization\index.html">
 						<button class="input-button">
 							<font class="button-text" face="Trebuchet MS"><b>войти</b></font>
 						</button>
 					</a>
 					<ul class="menu-list">
 						<li>
-							<a class="menu-link" href="https://pashafen07.github.io/index.html">
+							<a class="menu-link" href="C:\Users\Elena\Desktop\Project1\index.html">
 								<font class="menu-text" face="Trebuchet MS">Главная</font>
 							</a>
 						</li>
 						<li>
-							<a class="menu-link" href="C:\Users\Elena\Desktop\утиль\Project1\pages\Eat and products\index.html">
+							<a class="menu-link" href="C:\Users\Elena\Desktop\Project1\pages\Eat and products\index.html">
 								<font class="menu-text" face="Trebuchet MS">Еда и продукты</font>
 							</a>
 						</li>
 						<li>
-							<a class="menu-link" href="https://pashafen07.github.io/pages/About%20us/index.html">
+							<a class="menu-link" href="C:\Users\Elena\Desktop\Project1\pages\About us\index.html">
 								<font class="menu-text" face="Trebuchet MS">О нас</font>
 							</a>
 						</li>
 					</ul>
+					<form class="menu-checkbox">
+						<label><input class="input" onclick="check()" type="checkbox" value="1" name="k"><span></span></label>
+					</form>
 				</div>
 			</div>
 		</header>
@@ -47,39 +70,216 @@
 					<h6 class="banner-text"><font face="Arial">Good Food — Доставка еды и продуктов</font></h6>
 				</section>
 				<div class="main-content">
-					<ul class="eat-list-row">
-						<li class="eat-item">
-							<a href="https://www.delivery-club.ru/srv/Burger_King_grval">
-								<img class="item-img" class="item-img" src="img/burger-king.png">
+					<ul class="cards-row">
+						<li class="card">
+							<a class="card-link" href="https://www.delivery-club.ru/srv/Burger_King_grval">
+								<img class="card-img" class="item-img" src="img/burger-king.png">
+								<h2 class="card-text">Burger King</h2>
+								<div class="card-info">
+									<div class="info-element">
+										<h5>
+											25-35 мин
+										</h5>
+									</div>
+									<div class="info-element">
+										<h5>
+											от 0 ₽
+										</h5>
+									</div>
+									<div class="info-element">
+										<h5>
+											★ 4,6
+										</h5>
+									</div>
+								</div>
 							</a>
 						</li>
-						<li class="eat-item">
-							<a href="https://www.delivery-club.ru/srv/KFC_msk">
-								<img class="item-img" src="img/kfc.png">
+						<li class="card">
+							<a class="card-link" href="https://www.delivery-club.ru/srv/KFC_msk">
+								<img class="card-img" src="img/kfc.png">
+								<h2 class="card-text">KFC</h2>
+								<div class="card-info">
+									<div class="info-element">
+										<h5>
+											20-30 мин
+										</h5>
+									</div>
+									<div class="info-element">
+										<h5>
+											от 1 ₽
+										</h5>
+									</div>
+									<div class="info-element">
+										<h5>
+											★ 4,5
+										</h5>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li class="card">
+							<a class="card-link" href="https://www.delivery-club.ru/srv/kaif_burger_moskva">
+								<img class="card-img" src="img/kaif-burger.png">
+								<h2 class="card-text">KAIF BURGER</h2>
+								<div class="card-info">
+									<div class="info-element">
+										<h5>
+											25-35 мин
+										</h5>
+									</div>
+									<div class="info-element">
+										<h5>
+											от 1 ₽
+										</h5>
+									</div>
+									<div class="info-element">
+										<h5>
+											★ 4,2
+										</h5>
+									</div>
+								</div>
 							</a>
 						</li>
 					</ul>
-					<ul class="eat-list-row">
-						<li class="eat-item">
-							<a href="https://www.delivery-club.ru/srv/kaif_burger_moskva">
-								<img class="item-img" src="img/kaif-burger.png">
+					<ul class="cards-row">
+						<li class="card">
+							<a class="card-link" href="https://www.delivery-club.ru/srv/matteos_msk">
+								<img class="card-img" src="img/matteo's.png">
+								<h2 class="card-text">Matteo's</h2>
+								<div class="card-info">
+									<div class="info-element">
+										<h5>
+											35-45 мин
+										</h5>
+									</div>
+									<div class="info-element">
+										<h5>
+											от 1 ₽
+										</h5>
+									</div>
+									<div class="info-element">
+										<h5>
+											мало оценок
+										</h5>
+									</div>
+								</div>
 							</a>
 						</li>
-						<li class="eat-item">
-							<a href="https://www.delivery-club.ru/srv/lao_lee_moskva">
-								<img class="item-img" src="img/lao-lee.png">
+						<li class="card">
+							<a class="card-link" href="https://www.delivery-club.ru/srv/Shaurmu_khchu_msk">
+								<img class="card-img" src="img/shaverma.png">
+								<h2 class="card-text">Шаурму х@чу</h2>
+								<div class="card-info">
+									<div class="info-element">
+										<h5>
+											25-35 мин
+										</h5>
+									</div>
+									<div class="info-element">
+										<h5>
+											от 1 ₽
+										</h5>
+									</div>
+									<div class="info-element">
+										<h5>
+											★ 4,5
+										</h5>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li class="card">
+							<a class="card-link" href="https://www.delivery-club.ru/srv/Subway_rozhd">
+								<img class="card-img" src="img/subway.png">
+								<h2 class="card-text">Subway</h2>
+								<div class="card-info">
+									<div class="info-element">
+										<h5>
+											20-30 мин
+										</h5>
+									</div>
+									<div class="info-element">
+										<h5>
+											от 1 ₽
+										</h5>
+									</div>
+									<div class="info-element">
+										<h5>
+											★ 4,5
+										</h5>
+									</div>
+								</div>
 							</a>
 						</li>
 					</ul>
-					<ul class="eat-list-row">
-						<li class="eat-item">
-							<a href="https://www.delivery-club.ru/srv/Jon_Jolly">
-								<img class="item-img" src="img/eat.png">
+					<ul class="cards-row">
+						<li class="card">
+							<a class="card-link" href="https://www.delivery-club.ru/srv/Khljeb_Nasushhnyj_msk_rojd">
+								<img class="card-img" src="img/bread.png">
+								<h2 class="card-text">Хлеб Насущный</h2>
+								<div class="card-info">
+									<div class="info-element">
+										<h5>
+											30-40 мин
+										</h5>
+									</div>
+									<div class="info-element">
+										<h5>
+											от 1 ₽
+										</h5>
+									</div>
+									<div class="info-element">
+										<h5>
+											★ 4,3
+										</h5>
+									</div>
+								</div>
 							</a>
 						</li>
-						<li class="eat-item">
-							<a href="https://www.delivery-club.ru/srv/matteos_msk">
-								<img class="item-img" src="img/matteo's.png">
+						<li class="card">
+							<a class="card-link" href="https://www.delivery-club.ru/srv/Shokoladnica_msk_ddc">
+								<img class="card-img" src="img/chocolate.png">
+								<h2 class="card-text">Шоколадница</h2>
+								<div class="card-info">
+									<div class="info-element">
+										<h5>
+											25-35 мин
+										</h5>
+									</div>
+									<div class="info-element">
+										<h5>
+											от 1 ₽
+										</h5>
+									</div>
+									<div class="info-element">
+										<h5>
+											★ 4,3
+										</h5>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li class="card">
+							<a class="card-link" href="https://www.delivery-club.ru/srv/Tjerjemok_msk">
+								<img class="card-img" src="img/teremok.png">
+								<h2 class="card-text">Теремок</h2>
+								<div class="card-info">
+									<div class="info-element">
+										<h5>
+											25-35 мин
+										</h5>
+									</div>
+									<div class="info-element">
+										<h5>
+											От 1 ₽
+										</h5>
+									</div>
+									<div class="info-element">
+										<h5>
+											★ 4,5
+										</h5>
+									</div>
+								</div>
 							</a>
 						</li>
 					</ul>
@@ -91,8 +291,8 @@
 				<h4 class="navigation"><font class="navigation-text" face="Verdana">↑ Наверх</font></h4>
 				<h4 class="footer-text"><font face="Verdana">Присоединяйтесь к нам</font></h4>
 				<ul class="web-list">
-					<li class="web-item"><a href="https://vk.com"><img src="img/vk.png"></img></a></li>
-					<li class="web-item"><a href="https://telegram.org"><img src="img/tg.png"></img></a></li>
+					<li class="web-item"><a href="https://vk.com"><img class="web-img" src="img/vk.png"></img></a></li>
+					<li class="web-item"><a href="https://telegram.org"><img class="web-img" src="img/tg.png"></img></a></li>
 				</ul>
 				<h4 class="footer-text"><font face="Verdana">© 2022, ООО «Good Food», официальный сайт</font></h4>
 			</div>
