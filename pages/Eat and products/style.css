@@ -221,3 +221,21 @@ label
 {
 	margin-left: 10px;
 }
+@media screen and (max-width: 850px)
+{
+	.cards-row
+	{
+		display: flex;
+		justify-content: center;
+		list-style: none;
+		flex-direction: column;
+	}
+	.card
+	{
+		margin: 20px 5px;
+		border-radius: 20px;
+		transition-property: box-shadow, margin-top 50ms;
+		transition-duration: 250ms;
+		transition-timing-function: linear;
+	}
+}
