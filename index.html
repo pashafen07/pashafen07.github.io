@@ -4,6 +4,26 @@
 		<link rel="stylesheet" href="style.css">
 		<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<script>
+			function check()
+			{
+				if ($(".input").prop("checked"))
+				{
+					link = document.createElement("link");
+					link.href = "style-dark.css";
+					link.rel = "stylesheet";
+					$("head").append(link);
+				}
+				else
+				{
+					$("head").empty(link);
+					link = document.createElement("link");
+					link.href = "style.css";
+					link.rel = "stylesheet";
+					$("head").append(link);
+				}
+			}
+		</script>
 	</head>
 	<body>
 		<header class="header">
@@ -11,11 +31,11 @@
 				<div class="header-logo">
 					<a class="logo-link" href="index.html">
 						<img src="img/logo.png"></img>
-						<span class="logo-text"><font class="logo-name" face="Arial black">Good Food</font></span>
+						<span class="logo-text"><font face="Arial black">Good Food</font></span>
 					</a>
 				</div>
 				<div class="header-menu">
-					<a class="input-link" href="https://pashafen07.github.io/pages/Authorization/index.html">
+					<a class="input-link" href="pages/Authorization/index.html">
 						<button class="input-button">
 							<font class="button-text" face="Trebuchet MS"><b>войти</b></font>
 						</button>
@@ -27,16 +47,19 @@
 							</a>
 						</li>
 						<li>
-							<a class="menu-link" href="https://pashafen07.github.io/pages/Eat%20and%20products/index.html">
+							<a class="menu-link" href="pages/Eat and products/index.html">
 								<font class="menu-text" face="Trebuchet MS">Еда и продукты</font>
 							</a>
 						</li>
 						<li>
-							<a class="menu-link" href="https://pashafen07.github.io/pages/About%20us/index.html">
+							<a class="menu-link" href="pages/About us/index.html">
 								<font class="menu-text" face="Trebuchet MS">О нас</font>
 							</a>
 						</li>
 					</ul>
+					<form class="menu-checkbox">
+						<label><input class="input" onclick="check()" type="checkbox" value="1" name="k"><span></span></label>
+					</form>
 				</div>
 			</div>
 		</header>
@@ -46,45 +69,52 @@
 					<h1 class="banner-title"><font face="Arial black">Good Food</font></h1>
 					<h6 class="banner-text"><font face="Arial">Good Food — Доставка еды и продуктов</font></h6>
 				</section>
-				<div class="our-coriuers">
-					<h2 class="coriuers-text"><font face="Arial">Наши курьеры</font></h2>
-					<ul class="coriuers-list">
-						<li class="coriuer-item">
+				<div class="our-couriers">
+					<h1 class="couriers-text"><font face="sans-serif">Наши курьеры</font></h1>
+					<ul class="couriers-list">
+						<li class="courier-item">
 							<div class="courier-card">
 								<h3 class="card-text"><font face="Verdana">Курьер Василий</font></h3>
-								<img class="card-img" src="img/coriuer-1.jpg"></img>
+								<img class="card-img" src="img/courier-1.jpg"></img>
 								<h3 class="card-text"><font face="Verdana">Стаж работы: 2 лет</font></h3>
 								<h3 class="card-text"><font face="Verdana">★ 3,5</font></h3>
 							</div>
 						</li>
-						<li class="coriuer-item">
+						<li class="courier-item">
 							<div class="courier-card">
 								<h3 class="card-text"><font face="Verdana">Курьер Дмитрий</font></h3>
-								<img class="card-img" src="img/coriuer-2.jpg"></img>
+								<img class="card-img" src="img/courier-2.jpg"></img>
 								<h3 class="card-text"><font face="Verdana">Стаж работы: 4 года</font></h3>
 								<h3 class="card-text"><font face="Verdana">★ 5</font></h3>
 							</div>
 						</li>
-						<li class="coriuer-item">
+						<li class="courier-item">
 							<div class="courier-card">
 								<h3 class="card-text"><font face="Verdana">Курьер Михаил</font></h3>
-								<img class="card-img" src="img/coriuer-4.jpg"></img>
+								<img class="card-img" src="img/courier-4.jpg"></img>
 								<h3 class="card-text"><font face="Verdana">Стаж работы: 2 года</font></h3>
 								<h3 class="card-text"><font face="Verdana">★ 4,5</font></h3>
 							</div>
 						</li>
-						<li class="coriuer-item">
+						<li class="courier-item">
 							<div class="courier-card">
 								<h3 class="card-text"><font face="Verdana">Курьер Олег</font></h3>
-								<img class="card-img" src="img/coriuer-3.jpg"></img>
+								<img class="card-img" src="img/courier-3.jpg"></img>
 								<h3 class="card-text"><font face="Verdana">Стаж работы: 3 года</font></h3>
 								<h3 class="card-text"><font face="Verdana">★ 4</font></h3>
 							</div>
 						</li>
 					</ul>
 				</div>
+				<div class="our-numbers">
+					<h1 class="numbers-text"><font face="sans-serif">Мы в цыфрах</font></h1>
+					<div class="numbers-container">
+						<h2 class="numbers-item">Количество пользователей <span id="number"> </span></h2>
+						<h2 class="numbers-item">Количество подписчиков  <span id="number-2"> </span></h2>
+					</div>
+				</div>
 				<div class="our-partners">
-					<h2 class="partners-text"><font face="Arial">Наши Партнёры</font></h2>
+					<h1 class="partners-text"><font face="sans-serif">Наши партнёры</font></h1>
 					<ul class="partners-list">
 						<li class="item-1 item-active-1"></li>
 						<li class="item-2 item-active-2"></li>
@@ -97,12 +127,75 @@
 				<h4 class="navigation"><font class="navigation-text" face="Verdana">↑ Наверх</font></h4>
 				<h4 class="footer-text"><font face="Verdana">Присоединяйтесь к нам</font></h4>
 				<ul class="web-list">
-					<li class="web-item"><a href="https://vk.com"><img src="img/vk.png"></img></a></li>
-					<li class="web-item"><a href="https://telegram.org"><img src="img/tg.png"></img></a></li>
+					<li class="web-item"><a href="https://vk.com"><img class="web-img" src="img/vk.png"></img></a></li>
+					<li class="web-item"><a href="https://telegram.org"><img class="web-img" src="img/tg.png"></img></a></li>
 				</ul>
 				<h4 class="footer-text"><font face="Verdana">© 2022, ООО «Good Food», официальный сайт</font></h4>
 			</div>
 		</footer>
+		<script>
+         
+			var block_show = null;
+			var i = 0;
+			var block_show_2 = null;
+			var j = 0;
+			
+			function inc()
+			{
+				if (block_show)
+				{
+					if (i < 1000)
+					{
+						$('#number').html(i++);
+					}
+				}
+				if (i == 1000)
+				{
+					$('#number').html(i + '+');
+				}
+			}
+			function inc_2()
+			{
+				if (block_show_2)
+				{
+					if (j < 800)
+					{
+						$('#number-2').html(j++);
+					}
+				}
+				if (j == 800)
+				{
+					$('#number-2').html(j + '+');
+				}
+			}
+			
+			setInterval(inc, 1);
+			setInterval(inc_2, 1);
+			 
+			function scrollTracking(){
+				var wt = $(window).scrollTop();
+				var wh = $(window).height();
+				var et = $('#number').offset().top;
+				var eh = $('#number').outerHeight();
+				var et_2 = $('#number-2').offset().top;
+				var eh_2 = $('#number-2').outerHeight();
+				
+				if (et >= wt && et + eh <= wh + wt)
+				{
+					block_show = true;
+				}
+				if (et_2 >= wt && et + eh_2 <= wh + wt)
+				{
+					block_show_2 = true;
+				}
+			}
+			 
+			$(window).scroll(function(){
+				scrollTracking();
+			});
+				
+			
+		</script>
 		<script type="text/javascript">
 			$('.navigation').click(function() {
 			$('body,html').animate({scrollTop:0},800);
