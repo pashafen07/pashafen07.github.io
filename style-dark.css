@@ -1,0 +1,268 @@
+*
+{
+	padding: 0;
+	margin: 0;
+}
+.header
+{
+	border-bottom: 1px solid;
+	border-bottom-color: #CFCFCF;
+	width: 100%;
+	height: 81px;
+	position: fixed;
+	background: #363636;
+}
+body
+{
+    background: #363636;
+}
+.header-container
+{
+	display: flex;
+	justify-content: space-between;
+	padding:  2px 30px;
+	align-items: center;
+}
+.logo-link
+{
+	text-decoration: none;
+	align-items: center;
+	display: flex;
+}
+.logo-text
+{
+	font-size: 25px;
+	color: #B5B5B5; 
+	padding-left: 20px;
+}
+.header-menu
+{
+	display: flex;
+	align-items: center
+}
+.input-link
+{
+	padding-right: 20px;
+}
+.input-button
+{
+	width: 110%;
+	border: none;
+	border-radius: 10px;
+	border-color: #FFD700;
+	background:	#FFD700;
+	padding: 2px 0;
+	cursor: pointer;
+}
+.input-button:active
+{
+	box-shadow: 0 0 0 4px rgba(255, 215, 0, 0.5);
+}
+.button-text
+{
+	color: White;
+	font-size: 30px;
+}
+.menu-list
+{
+	list-style: none;
+	display: flex;
+}
+.menu-link
+{
+	text-decoration: none;
+	color: #B5B5B5;
+	padding: 0 10px;
+	font-size: 28px;
+}
+.menu-text:hover
+{
+	color: #FFD700;
+}
+.main-container
+{
+	padding: 60px 50px;
+}
+.banner-section
+{
+	padding: 75px 0;
+	text-align: center;
+	color: #FFD700;
+}
+.banner-title
+{
+	padding-bottom: 10px;
+	font-size: 43px;
+}
+.banner-text
+{
+	font-size: 23px;
+}
+.our-couriers
+{
+	text-align: center;
+	margin-bottom: 60px;
+}
+.couriers-text, .partners-text, .numbers-text
+{
+	color: #FFD700;
+	font-size: 26px;
+}
+.couriers-list
+{
+	list-style: none;
+	justify-content: center;
+	padding: 45px;
+	color: #B5B5B5;
+	display: flex;
+}
+.courier-item
+{
+	margin: 0 35px;
+}
+.courier-card
+{
+	border: 2px solid;
+	border-color: #FFD700;
+	border-radius: 20px;
+	padding: 0 20px;
+}
+.card-text
+{
+	margin: 15px 0;
+}
+.card-img
+{
+	border-radius: 30px;
+}
+.our-partners
+{
+	text-align: center;
+}
+.partners-list
+{
+	margin-top: 30px;
+	list-style: none;
+	justify-content: center;
+	display: flex;
+}
+.item-1
+{
+	background: url(img/d-logo-2.png);
+	width: 300;
+	height: 78;
+	margin: 0 170px;
+}
+.item-2
+{
+	background: url(img/yn-logo-2.png);
+	width: 300;
+	height: 78;
+	margin: 0 150px;
+}
+.item-active-1:hover
+{
+	background: url(img/d-logo-1.png);
+}
+.item-active-2:hover
+{
+	background: url(img/yn-logo-1.png);
+}
+.our-numbers
+{
+	text-align: center;
+	margin-bottom: 70px;
+}
+.numbers-container
+{
+	display: flex;
+	justify-content: center;
+}
+.numbers-item
+{
+	font-family: Arial;
+	color: #B5B5B5;
+	margin: 35px 180px;
+}
+#number, #number-2
+{
+	color:#FFD700
+}
+.footer
+{
+	border-top: 1px solid;
+	border-top-color: Gainsboro;
+}
+.footer-container
+{
+	padding: 20px;
+	text-align: center;
+	color: #FFD700;
+}
+.navigation
+{
+	color: Gainsboro;
+}
+.navigation-text:hover
+{
+	color: #FFB90F;
+	cursor: pointer;
+}
+.footer-text
+{
+	margin-top: 10px;
+}
+.web-list
+{
+	list-style: none;
+	display: flex;
+	justify-content: center;
+}
+.web-item
+{
+	padding: 25px;
+}
+.web-img
+{
+	border-radius: 5px;
+}
+::selection 
+{
+	background: #FFD700;
+	color: White;
+}
+::-webkit-scrollbar
+{
+	height: 0;
+	width: 0;
+}
+label
+{
+	width: 50px;
+	height: 22px;
+	display: block;
+	position: relative;
+	margin-top: 3px;
+}
+.input + span
+{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: url("img/dark-light.png") no-repeat;;
+	cursor: pointer;
+}
+.input
+{
+	opacity: 0;
+}
+.input:checked + span
+{
+	background-position: 0 -22px; 
+}
+.menu-checkbox
+{
+	margin-left: 10px;
+}
