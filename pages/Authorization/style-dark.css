@@ -1,0 +1,178 @@
+*
+{
+	padding: 0;
+	margin: 0;
+}
+.header
+{
+	border-bottom: 1px solid;
+	border-bottom-color: #CFCFCF;
+	width: 100%;
+	height: 81px;
+	position: fixed;
+	background: #363636;
+}
+body
+{
+    background: #363636;
+}
+.header-container
+{
+	display: flex;
+	justify-content: space-between;
+	padding:  2px 30px;
+	align-items: center;
+}
+.logo-link
+{
+	text-decoration: none;
+	align-items: center;
+	display: flex;
+}
+.logo-text
+{
+	font-size: 25px;
+	color: #B5B5B5; 
+	padding-left: 20px;
+}
+.main-container
+{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.form
+{
+	width: 300px;
+	padding: 32px;
+	border-radius: 10px;
+	
+	font-family: sans-serif;
+	letter-spacing: 1px;
+    background: white;
+}
+.form_title
+{ 
+	text-align: center;
+	margin: 0 0 32px 0; 
+	font-weight: normal;
+}
+.form_button
+{
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	font-family: sans-serif;
+	letter-spacing: 1px;
+	font-size: 16xp;
+	color :#fff;
+	background-color: #FFB90F;
+	outline: none;
+	cursor: pointer;
+	transition: 0.3s;
+}
+.form_grup
+{
+	position: relative;
+	margin-bottom: 32px;
+}
+.form_input
+{
+	width: 100%;
+	padding: 0 0 10px 0;
+	border: none;
+	border-bottom: 1px solid #e0e0e0;
+	background-color: transparent;
+	outline: none;
+	transition: 0.3s;
+}
+.password_input_on
+{
+	background: url(img/bg-eye.png);
+}
+.password_input_off
+{
+	background: url(img/bg-eye-2.png);
+}
+.checkbox
+{
+	position: absolute;
+	margin-left: 281px;
+	margin-top: 5px;
+	width: 15px;
+	height: 15px;
+	opacity: 0;
+	cursor: pointer;
+}
+.form_label
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	color: #9e9e9e;
+	transition: 0.3s;
+}
+.form_button:focus,
+.form_button:hover
+{
+    background-color: rgba(255, 185, 15, 0.9);
+}
+.form_input:focus
+{
+	border-bottom: 1px solid #FFB90F;
+}
+.form_input:focus ~ .form_label
+{
+	top: -18px;
+	font-size:12px;
+	color: #e0e0e0;
+}
+.form_input:focus ~ .form_label,
+.form_input:not(:placeholder-shown) ~ .form_label
+{
+    top: -18px;
+    font-size:12px;
+    color: #e0e0e0;
+}
+.button-link
+{
+	color :#fff;
+	text-decoration: none;
+}
+::selection 
+{
+	background: #FFD700;
+	color: White;
+}
+label
+{
+	width: 50px;
+	height: 22px;
+	display: block;
+	position: relative;
+	margin-top: 3px;
+}
+.input + span
+{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: url("img/dark-light.png") no-repeat;;
+	cursor: pointer;
+}
+.input
+{
+	opacity: 0;
+}
+.input:checked + span
+{
+	background-position: 0 -22px; 
+}
+.menu-checkbox
+{
+	margin-left: 10px;
+}
