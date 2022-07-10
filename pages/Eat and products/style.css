@@ -33,10 +33,6 @@
 	color: #B5B5B5; 
 	padding-left: 20px;
 }
-.logo-name:active
-{
-	color: #FFD700;
-}
 .header-menu
 {
 	display: flex;
@@ -49,11 +45,16 @@
 .input-button
 {
 	width: 110%;
+	border: none;
 	border-radius: 10px;
 	border-color: #FFD700;
 	background:	#FFD700;
 	padding: 2px 0;
 	cursor: pointer;
+}
+.input-button:active
+{
+	box-shadow: 0 0 0 4px rgba(255, 215, 0, 0.5);
 }
 .button-text
 {
@@ -78,7 +79,10 @@
 }
 .main-container
 {
-	padding: 60px 50px;
+	padding-top: 60px;
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-bottom: 10px;
 }
 .banner-section
 {
@@ -95,20 +99,53 @@
 {
 	font-size: 23px;
 }
-.eat-list-row
+.cards-row
 {
 	display: flex;
-	list-style: none;
 	justify-content: center;
+	list-style: none;
 }
-.eat-item
+.card
 {
-	margin: 50px 100px;
-}
-.item-img
-{
+	margin: 20px 30px;
 	border-radius: 20px;
-	box-shadow: 0 2px 7px Gainsboro;
+	transition-property: box-shadow, margin-top 50ms;
+	transition-duration: 250ms;
+	transition-timing-function: linear;
+}
+.card:hover
+{
+	box-shadow: 0 0 7px 2px Gainsboro;
+	margin-top: 16;
+}
+.card-link
+{
+	text-decoration: none;
+}
+.card-text
+{
+	font-family: Arial, Helvetica, sans-serif;
+	color: black;
+	margin: 20px 10px;
+}
+.card-img
+{
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+}
+.card-info
+{
+	display: flex;
+}
+.info-element
+{
+	text-decoration: none;
+	color: #696969;
+	font-family: Arial, Helvetica, sans-serif;
+	background: whitesmoke;
+	border-radius: 20px;
+	margin: 5px 15px 10px 10px;
+	padding: 5px 10px;
 }
 .footer
 {
@@ -143,4 +180,44 @@
 .web-item
 {
 	padding: 25px;
+}
+::selection 
+{
+	background: #FFD700;
+	color: White;
+}
+::-webkit-scrollbar
+{
+	height: 0;
+	width: 0;
+}
+label
+{
+	width: 50px;
+	height: 22px;
+	display: block;
+	position: relative;
+	margin-top: 3px;
+}
+.input + span
+{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: url("img/dark-light.png") no-repeat;;
+	cursor: pointer;
+}
+.input
+{
+	opacity: 0;
+}
+.input:checked + span
+{
+	background-position: 0 -22px; 
+}
+.menu-checkbox
+{
+	margin-left: 10px;
 }
