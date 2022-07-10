@@ -4,32 +4,71 @@
 		<link rel="stylesheet" href="style.css">
 		<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<script>
+			function check_2()
+			{
+				if ($(".input").prop("checked"))
+				{
+					link = document.createElement("link");
+					link.href = "style-dark.css";
+					link.rel = "stylesheet";
+					$("head").append(link);
+				}
+				else
+				{
+					$("head").empty(link);
+					link = document.createElement("link");
+					link.href = "style.css";
+					link.rel = "stylesheet";
+					$("head").append(link);
+				}
+			}
+		</script>
+		<script>
+			function check()
+			{
+				if ($(".checkbox").prop("checked"))
+				{
+					$("#password").attr("type", "text");
+					$("#password").removeClass("password_input_off");
+					$("#password").addClass("password_input_on");
+				}
+				else
+				{
+					$("#password").attr("type", "password");
+					$("#password").removeClass("password_input_on");
+					$("#password").addClass("password_input_off");
+				}
+			}
+		</script>
 	</head>
 	<body>
 		<header class="header">
 			<div class="header-container">
-					<a class="logo-link" href="https://pashafen07.github.io/index.html">
+					<a class="logo-link" href="C:\Users\Elena\Desktop\Project1\index.html">
 						<img src="img/logo.png"></img>
-						<span class="logo-text"><font class="logo-name" face="Arial black">Good Food</font></span>
+						<span class="logo-text"><font face="Arial black">Good Food</font></span>
 					</a>
+					<form class="menu-checkbox">
+						<label><input class="input" onclick="check_2()" type="checkbox" value="1" name="k"><span></span></label>
+					</form>
 			</div>
 		</header>
 		<main class="main">
 			<div class="main-container">
-				<div class="main-title">
-					<h2 class="main-title"><font face="Arial black">Регистрация</font></h2>
-				</div>
-				<div class="card-section">
-					<div class="main-card">
-						<h1 class="card-text"><font face="Arial">Введите имя</font></h1>
-						<input class="card-input input-focus" type="text"></input>
-						<h1 class="card-text"><font face="Arial">Введите логин</font></h1>
-						<input class="card-input input-focus" type="login"></input>
-						<h1 class="card-text"><font face="Arial">Введите пароль</font></h1>
-						<input class="card-input input-focus" type="password"></input>
-						<a class="card-link" href="https://pashafen07.github.io/index.html"><button class="card-button">Вход</button></a>
+				<form class="form">
+					<h1 class="form_title">Вход</h1>
+					<div class="form_grup">
+						<input class="form_input" placeholder=" ">
+					  	<label class="form_label">Email</label>
 					</div>
-				</div>
+					<div class="form_grup">
+						<input class="checkbox" type="checkbox" onclick="check()">
+						<input id="password" type="password" class="form_input password_input_off" placeholder=" ">
+					  	<label class="form_label">Пароль</label>
+					</div>
+					<button class="form_button"><a class="button-link" href="C:/Users/Elena/Desktop/Project1/index.html">Войти</a></button>
+				</form>
 			</div>
 		</main>
 	</body>
