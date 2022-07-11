@@ -5,6 +5,8 @@
 }
 .header
 {
+	border-top: 1px solid;
+	border-top-color: Snow;
 	border-bottom: 1px solid;
 	border-bottom-color: #CFCFCF;
 	width: 100%;
@@ -14,7 +16,7 @@
 }
 body
 {
-    background: #363636;
+	background: #363636;
 }
 .header-container
 {
@@ -47,10 +49,9 @@ body
 	width: 300px;
 	padding: 32px;
 	border-radius: 10px;
-	
+	box-shadow: 0 4px 16px #ccc;
 	font-family: sans-serif;
 	letter-spacing: 1px;
-    background: white;
 }
 .form_title
 { 
